@@ -5,11 +5,12 @@
 	(uuid "62236e9f-ef27-467c-852b-587c32c473f1")
 	(paper "User" 419.1 323.85)
 	(title_block
-		(title "SilkyDesign MicroSystem Z80 w/Front Panel")
-		(date "2025-08-15")
+		(title "MicroSystem Z80 w/Front Panel & RC2014 Bus")
+		(date "2025-09-22")
 		(rev "v1.0")
-		(company "Silky Design")
-		(comment 1 "Copyright AESilky 2025")
+		(company "SilkyDESIGN")
+		(comment 1 "Copyright 2025 AESilky")
+		(comment 3 "MicroSystem Z80 w/Front Panel & RC2014 Bus")
 	)
 	(lib_symbols)
 	(sheet

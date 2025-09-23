@@ -5,11 +5,12 @@
 	(uuid "bfb6270f-c071-4690-9075-7fc46d3a4377")
 	(paper "User" 419.1 323.85)
 	(title_block
-		(title "Main Board - MMU and Memory")
-		(date "2025-08-15")
+		(title "MMU and Memory")
+		(date "2025-09-22")
 		(rev "v1.0")
-		(company "Silky Design")
-		(comment 1 "Copyright AESilky 2025")
+		(company "SilkyDESIGN")
+		(comment 1 "Copyright 2025 AESilky")
+		(comment 3 "MicroSystem Z80 w/Front Panel & RC2014 Bus")
 	)
 	(lib_symbols
 		(symbol "74xx:74AHCT244"
@@ -14178,7 +14179,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "74HCT138"
+		(property "Value" "74ACT138"
 			(at 281.178 158.75 0)
 			(effects
 				(font
@@ -14620,6 +14621,15 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Part" "Flash ROM"
+			(at 358.394 137.668 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(color 0 72 72 1)
 				)
 			)
 		)

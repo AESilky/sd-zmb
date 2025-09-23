@@ -1,0 +1,14 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "54e1fa36-99ef-4649-b194-6b5f4e58ec4e")
+	(paper "User" 419.1 323.85)
+	(title_block
+		(date "2025-09-21")
+		(rev "1.0")
+		(company "SilkyDESIGN AESilky")
+		(comment 1 "Copyright 2025 AESilky")
+	)
+	(lib_symbols)
+)

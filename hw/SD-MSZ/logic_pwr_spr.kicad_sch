@@ -5,11 +5,12 @@
 	(uuid "181e4608-4f50-4f14-83f7-141116ae3161")
 	(paper "User" 419.1 323.85)
 	(title_block
-		(title "Main Board - Logic Power & Spares")
-		(date "2025-08-15")
+		(title "Logic Power & Spares")
+		(date "2025-09-22")
 		(rev "v1.0")
-		(company "Silky Design")
-		(comment 1 "Copyright AESilky 2025")
+		(company "SilkyDESIGN")
+		(comment 1 "Copyright 2025 AESilky")
+		(comment 3 "MicroSystem Z80 w/Front Panel & RC2014 Bus")
 	)
 	(lib_symbols
 		(symbol "74xx:74HCT74"
@@ -7193,10 +7194,10 @@
 			)
 		)
 		(pin "4"
-			(uuid "216c0449-fc8b-46b4-a808-1ce102e3fbc9")
+			(uuid "216c0449-fc8b-46b4-a808-1ce102e3fbca")
 		)
 		(pin "10"
-			(uuid "b3e713f2-b228-44e7-8346-842cf1887484")
+			(uuid "b3e713f2-b228-44e7-8346-842cf1887485")
 		)
 		(pin "14"
 			(uuid "cd3d9eae-f57b-48d2-acfb-896617c24d86")
@@ -7205,34 +7206,34 @@
 			(uuid "9d1a062b-1119-4d50-9146-42679de06090")
 		)
 		(pin "9"
-			(uuid "7c0ec157-0cb7-42e8-b635-7e81c2253e1a")
+			(uuid "7c0ec157-0cb7-42e8-b635-7e81c2253e1b")
 		)
 		(pin "1"
-			(uuid "6b3304f7-e99d-48ca-abc6-8166dbbb12b4")
+			(uuid "6b3304f7-e99d-48ca-abc6-8166dbbb12b5")
 		)
 		(pin "5"
-			(uuid "29f1af95-e8b1-41e1-bbd5-d5df0c0fa696")
+			(uuid "29f1af95-e8b1-41e1-bbd5-d5df0c0fa697")
 		)
 		(pin "6"
-			(uuid "9717caed-e406-4587-b78e-961e165e10bf")
+			(uuid "9717caed-e406-4587-b78e-961e165e10c0")
 		)
 		(pin "3"
-			(uuid "de33dfec-a72f-43b3-a0ae-ff0ae977c99b")
+			(uuid "de33dfec-a72f-43b3-a0ae-ff0ae977c99c")
 		)
 		(pin "2"
-			(uuid "ff2a8ed8-f53e-4964-98fc-26c55a00075f")
+			(uuid "ff2a8ed8-f53e-4964-98fc-26c55a000760")
 		)
 		(pin "12"
-			(uuid "b6e06c6c-4236-4bf3-9c87-4626533abe7e")
+			(uuid "b6e06c6c-4236-4bf3-9c87-4626533abe7f")
 		)
 		(pin "11"
-			(uuid "6e4d8f7e-f1b8-4590-b27a-a41f5215c09a")
+			(uuid "6e4d8f7e-f1b8-4590-b27a-a41f5215c09b")
 		)
 		(pin "13"
-			(uuid "34f4cc6f-0589-4e91-95de-7456de12715f")
+			(uuid "34f4cc6f-0589-4e91-95de-7456de127160")
 		)
 		(pin "8"
-			(uuid "9354e6db-2822-44c4-b6de-1ef9876ccd7d")
+			(uuid "9354e6db-2822-44c4-b6de-1ef9876ccd7e")
 		)
 		(instances
 			(project "SD-MSZ"
