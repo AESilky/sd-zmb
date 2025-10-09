@@ -5,12 +5,11 @@
 	(uuid "62236e9f-ef27-467c-852b-587c32c473f1")
 	(paper "User" 419.1 323.85)
 	(title_block
-		(title "MicroSystem Z80 w/Front Panel & RC2014 Bus")
-		(date "2025-09-22")
-		(rev "v1.0")
+		(title "Retro Z80 Motherboard w/Paripherals & RC2014 Bus")
+		(date "2025-10-08")
+		(rev "PR4")
 		(company "SilkyDESIGN")
-		(comment 1 "Copyright 2025 AESilky")
-		(comment 3 "MicroSystem Z80 w/Front Panel & RC2014 Bus")
+		(comment 1 "Copyright 2025 AESilky & SMcCown")
 	)
 	(lib_symbols)
 	(sheet
@@ -49,7 +48,7 @@
 			)
 		)
 		(instances
-			(project "SD-MSZ"
+			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1"
 					(page "2")
 				)
@@ -91,51 +90,9 @@
 			)
 		)
 		(instances
-			(project "SD-MSZ"
+			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 102.87 27.94)
-		(size 67.31 43.18)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "bb9ab308-7d5d-4300-8a15-41cecd214f6a")
-		(property "Sheetname" "MainBoard-MMU"
-			(at 102.87 27.2284 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "mb_mmu.kicad_sch"
-			(at 102.87 71.7046 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "SD-MSZ"
-				(path "/62236e9f-ef27-467c-852b-587c32c473f1"
-					(page "3")
+					(page "4")
 				)
 			)
 		)
@@ -175,9 +132,9 @@
 			)
 		)
 		(instances
-			(project "SD-MSZ"
+			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1"
-					(page "4")
+					(page "3")
 				)
 			)
 		)

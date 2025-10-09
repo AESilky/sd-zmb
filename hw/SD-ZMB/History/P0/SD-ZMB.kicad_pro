@@ -40,12 +40,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "power_pin_not_driven|2705100|2730500|bc568833-7ad8-49d8-a829-ae98e2af0d2d|00000000-0000-0000-0000-000000000000|/62236e9f-ef27-467c-852b-587c32c473f1/48cc9b60-debe-432c-ac2c-bb1cba6b9068|/62236e9f-ef27-467c-852b-587c32c473f1/48cc9b60-debe-432c-ac2c-bb1cba6b9068|",
-        "GND through transistor circuit."
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -231,15 +226,10 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "footprint_filter": "warning",
-      "footprint_link_issues": "ignore",
-      "four_way_junction": "warning",
       "global_label_dangling": "error",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
-      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
-      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -252,15 +242,9 @@
       "pin_not_driven": "error",
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
-      "same_local_global_label": "ignore",
-      "similar_label_and_power": "warning",
       "similar_labels": "warning",
-      "similar_power": "warning",
       "simulation_model_issue": "error",
-      "single_global_label": "ignore",
       "unannotated": "error",
-      "unconnected_wire_endpoint": "warning",
-      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -271,8 +255,8 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "SD-MSZ.kicad_pro",
-    "version": 3
+    "filename": "SD-ZMB.kicad_pro",
+    "version": 1
   },
   "net_settings": {
     "classes": [
@@ -287,7 +271,6 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -295,21 +278,28 @@
         "wire_width": 6
       },
       {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "+5V",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)"
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
+        "wire_width": 6
       }
     ],
     "meta": {
-      "version": 4
+      "version": 3
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "+5V": [
-        "+5V"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": []
   },
   "pcbnew": {
