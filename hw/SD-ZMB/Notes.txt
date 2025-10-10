@@ -1,0 +1,15 @@
+We should replace the act244 with a 245 and add a 245 to the lower address bus, with that the full address bus is buffered as well as  ZMREQ. ZIORQ, RD and WR.  Add a 125 or 367 for the bus status read.  That allows us to move some if not most of the signals to the Z80 no buffer delays. We need to get MREQ out of the paging RAM, to give us more access time. Please add pull ups to ZMREQ, ZIORQ, ZRD and ZWR so they are a known state when tri-stated and not floating.
+
+
+That is what I am thinking to minimize the delays between the Z80 and memory, plus the onboard devices (no we treat our board per as local friends). We still need to consider the expansion board area and instruction fetches maybe those off board accesses will require a wait state to be inserted. The Z80 is a very slow device in respect to the clock, including its needs for data setup. Only 2 clock times for all that work to be done. So the paging register is always in series, we must have it on the first available stable signal (addresses), and take advantage some of the control signals might be ok with the MREQ delayed by a ½ of a clock. All of this close timing is connected to M1 (instruction fetch). We do have M1 which is also based off the start of the 2 bit clock cycle, so we know it’s a read, nothing else. Don’t forget that with only 2 cycles to make all this happen. 
+
+
+I am going with the assumption that we are targeting to run at 6 MHz or 12 MHz using a Z84C0006 or a Z84C0020. The SRAM and FLASH would have a 55ns access time.
+
+
+Our first priority is to get the addresses stable and to the devices in the quickest way. Next is to keep the memory devices RD/WR controls fast. At 6MHz CLK to address is 90ns. CLK to MREQ is a 154ns. Including the required setup for data in is 333ns -30ns of setup, just say 300ns.
+
+ 
+
+At 12MHz assuming a z80c0020, CLK to address is 57ns, and CLK to MREQ 87ns with a two cycle time of 167ns, minus the 12ns of setup time for the z80. I think that gives us 98ns off the address and only 80ns from MREQ not accounting for any additional delays in the logic.
+
