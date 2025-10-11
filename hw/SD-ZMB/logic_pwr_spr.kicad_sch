@@ -6,8 +6,8 @@
 	(paper "User" 419.1 323.85)
 	(title_block
 		(title "Logic Power & Spares")
-		(date "2025-10-09")
-		(rev "PR5")
+		(date "2025-10-10")
+		(rev "PR7")
 		(company "SilkyDESIGN")
 		(comment 1 "Copyright 2025 AESilky & SMcCown")
 		(comment 3 "MicroSystem Z80 w/Front Panel & RC2014 Bus")
