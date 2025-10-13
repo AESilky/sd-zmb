@@ -7,7 +7,7 @@
 	(title_block
 		(title "CTC, SIO, KBD, SD, Disp, BP80 Bus")
 		(date "2025-10-10")
-		(rev "PR7.5")
+		(rev "PR7.4")
 		(company "SilkyDESIGN")
 		(comment 1 "Copyright 2025 AESilky & SMcCown")
 	)
