@@ -7,7 +7,7 @@
 	(title_block
 		(title "Retro Z80 Motherboard w/Paripherals & RC2014 Bus")
 		(date "2025-10-10")
-		(rev "PR7")
+		(rev "PR7.4")
 		(company "SilkyDESIGN")
 		(comment 1 "Copyright 2025 AESilky & SMcCown")
 	)
