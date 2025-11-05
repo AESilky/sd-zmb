@@ -2,14 +2,9 @@
   "board": {
     "active_layer": 0,
     "active_layer_preset": "",
-    "auto_track_width": false,
+    "auto_track_width": true,
     "hidden_netclasses": [],
-    "hidden_nets": [
-      "GND",
-      "+5V",
-      "Earth",
-      "+3.3V"
-    ],
+    "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
@@ -55,7 +50,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "ffffffff_ffffffff_ffffffff_fffdffff",
+    "visible_layers": "ffffffff_ffffffff_ffffffff_ffffffff",
     "zone_display_mode": 1
   },
   "git": {
@@ -64,13 +59,11 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "SD-ZMB.kicad_prl",
+    "filename": "SD-DADPT.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {
     "col_hidden": [
-      false,
-      false,
       false,
       false,
       false,
@@ -92,9 +85,7 @@
       6,
       7,
       8,
-      9,
-      10,
-      11
+      9
     ],
     "col_widths": [
       294,
@@ -106,9 +97,7 @@
       173,
       126,
       173,
-      173,
-      173,
-      460
+      173
     ],
     "custom_group_rules": [],
     "expanded_rows": [],

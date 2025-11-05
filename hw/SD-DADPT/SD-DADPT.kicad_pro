@@ -6,7 +6,7 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.1,
+        "board_outline_line_width": 0.05,
         "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
@@ -30,7 +30,7 @@
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.15,
+        "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
@@ -41,23 +41,17 @@
           "height": 1.27,
           "width": 2.54
         },
-        "silk_line_width": 0.15,
+        "silk_line_width": 0.1,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -125,7 +119,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
@@ -139,8 +133,6 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_clearance": 0.0,
-        "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -188,10 +180,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        0.508
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -218,12 +207,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -254,7 +238,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0,
@@ -268,7 +252,7 @@
         1,
         0,
         0,
-        0,
+        1,
         0,
         2,
         2,
@@ -310,7 +294,7 @@
         0,
         0,
         0,
-        0,
+        1,
         0,
         0,
         0,
@@ -332,13 +316,13 @@
         2
       ],
       [
-        0,
-        0,
         1,
         1,
+        1,
+        1,
+        1,
         0,
-        0,
-        0,
+        1,
         1,
         1,
         1,
@@ -421,7 +405,6 @@
       "bus_entry_needed": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
-      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
@@ -431,7 +414,7 @@
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
       "four_way_junction": "ignore",
-      "global_label_dangling": "error",
+      "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "label_multiple_wires": "warning",
@@ -441,19 +424,19 @@
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
       "missing_unit": "warning",
-      "multiple_net_names": "error",
+      "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
-      "simulation_model_issue": "error",
+      "simulation_model_issue": "ignore",
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
@@ -468,14 +451,14 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "SD-ZMB.kicad_pro",
+    "filename": "SD-DADPT.kicad_pro",
     "version": 3
   },
   "net_settings": {
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2032,
+        "clearance": 0.254,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -486,55 +469,39 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2032,
-        "via_diameter": 0.635,
-        "via_drill": 0.3048,
+        "track_width": 0.254,
+        "via_diameter": 0.762,
+        "via_drill": 0.381,
         "wire_width": 6
       },
       {
-        "clearance": 0.254,
-        "name": "GNDTR",
+        "clearance": 0.41148,
+        "name": "POWER",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.508,
-        "via_diameter": 0.762,
-        "via_drill": 0.381
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.254,
-        "line_style": 0,
-        "name": "POWER",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.508,
-        "via_diameter": 0.762,
-        "via_drill": 0.381,
-        "wire_width": 6
+        "via_diameter": 2.032,
+        "via_drill": 1.016
       }
     ],
     "meta": {
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "+5V": [
-        "+5V"
-      ],
-      "/ExpIFC-SIOCTC/UHPWR5": [
-        "POWER"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": [
       {
         "netclass": "POWER",
-        "pattern": "+*"
+        "pattern": "*+*"
       },
       {
-        "netclass": "GNDTR",
+        "netclass": "POWER",
         "pattern": "GND"
+      },
+      {
+        "netclass": "POWER",
+        "pattern": "/BL*"
       }
     ]
   },
@@ -543,7 +510,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Plot/",
+      "plot": "gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -616,198 +583,12 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "ADDR_L",
-          "name": "ADDR_L",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Access",
-          "name": "Access",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Access nS",
-          "name": "Access nS",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Addr_H",
-          "name": "Addr_H",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Addr_L",
-          "name": "Addr_L",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "CPU",
-          "name": "CPU",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Freq",
-          "name": "Freq",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Function",
-          "name": "Function",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Function2",
-          "name": "Function2",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MEM ADDR",
-          "name": "MEM ADDR",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MEM_ADDR",
-          "name": "MEM_ADDR",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Note1",
-          "name": "Note1",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "OPT-A",
-          "name": "OPT-A",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "OPT-B",
-          "name": "OPT-B",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Opt-1",
-          "name": "Opt-1",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Opt-2",
-          "name": "Opt-2",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Opt-3",
-          "name": "Opt-3",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PartA",
-          "name": "PartA",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PartB",
-          "name": "PartB",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PartOpt1",
-          "name": "PartOpt1",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PartOpt2",
-          "name": "PartOpt2",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PartOr",
-          "name": "PartOr",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Product",
-          "name": "Product",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PropDly",
-          "name": "PropDly",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Spec",
-          "name": "Spec",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Type1",
-          "name": "Type1",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "When",
-          "name": "When",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "ADDR_H",
-          "name": "ADDR_H",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "",
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -819,11 +600,11 @@
       "default_text_size": 50.0,
       "field_names": [],
       "intersheets_ref_own_page": false,
-      "intersheets_ref_prefix": "[",
+      "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
-      "intersheets_ref_show": true,
-      "intersheets_ref_suffix": "]",
-      "junction_size_choice": 2,
+      "intersheets_ref_show": false,
+      "intersheets_ref_suffix": "",
+      "junction_size_choice": 3,
       "label_size_ratio": 0.375,
       "operating_point_overlay_i_precision": 3,
       "operating_point_overlay_i_range": "~A",
@@ -840,7 +621,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "Plot/",
+    "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -853,20 +634,8 @@
   },
   "sheets": [
     [
-      "62236e9f-ef27-467c-852b-587c32c473f1",
+      "b3eb4206-407e-4e20-a3fd-b9d21e5581bd",
       "Root"
-    ],
-    [
-      "48cc9b60-debe-432c-ac2c-bb1cba6b9068",
-      "MainBoard-CPU_Decode"
-    ],
-    [
-      "c744ff77-26bb-4e1e-8dbf-a9eea5814d68",
-      "ExpIFC-SIOCTC"
-    ],
-    [
-      "4d930499-c077-45d5-a71c-439550a6ae18",
-      "LOGIC_PWR_SPARES"
     ]
   ],
   "text_variables": {}

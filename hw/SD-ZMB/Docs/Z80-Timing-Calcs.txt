@@ -1,0 +1,86 @@
+The following are from the Z80-Datasheet (PS017801-0602).
+Checked against the Z80 Data Book ('Zilog Components').
+
+ᴬᴮ
+
+Address, MREQ, M1, and RD, timing:
+
+Calculations:
+1.  TcC ≡ TwCh + TwCl + TrC + TlC = (65+65+20+20) = 170
+7.  TdA(MREQf) ≡ TwCh + TlC - 50 = (65+20) - 50 = 35
+10. TwMREQh ≡ TwCh + TlC - 20 = (65+20) - 20 = 65
+11. TwMREQl ≡ TcC ≡ TwCH + TwCl + TrC + TlC - 30 = (65+65+20+20) - 30 = 140
+
+==============
+CLK @ 6MHz (6.173MHz); Z84C0006 (CMOS Z80 6MHz)
+--------------
+1.  TcC         Clock Cycle time (min):                 162nS (this is actually 6.173MHz, 6MHz is 167nS)
+2.  TwCh        Clock Pulse width (high, min)           65nS
+3.  TwCl        Clock Pulse width (low, min)            65nS
+4.  TfC         Clock edge Fall time (max)              20nS
+5.  TrC         Clock edge Rise time (max)              20nS
+6.  TdCr(A)     Address valid from Clock Rise (max)     90nS
+7.  TdA(MREQf)  Address valid to /MREQ Fall (min)       35nS
+8.  TdCf(MREQf) Clock Fall to /MREQ Fall delay (max)    70nS
+9.  TdCr(MREQr) Clock Rise to /MREQ Rise delay (max)    70nS
+10. TwMREQh     /MREQ pulse width (High, min)           65nS
+11. TwMREQl     /MREQ pulse width (Low, min)            132nS
+12. TdCf(MREQr) Clock Fall to /MREQ Rise delay (max)    70nS
+13. TdCf(RDf)   Clock Fall to /RD Fall delay (max)      80nS
+14. TdCr(RDr)   Clock Rise to /RD Rise delay (max)      70nS
+15. TsD(Cr)     Data setup time to Clock Rise (min)     30nS
+..
+19. TdCr(M1f)   Clock Rise to /M1 Fall delay (max)      80nS
+20. TdCr(M1r)   Clock Rise to /M1 Rise delay (max)      80nS
+
+Calculations:
+1.  TcC ≡ TwCh + TwCl + TrC + TlC = (65+65+20+20) = 170
+7.  TdA(MREQf) ≡ TwCh + TlC - 50 = (65+20) - 50 = 35
+10. TwMREQh ≡ TwCh + TlC - 20 = (65+20) - 20 = 65
+11. TwMREQl ≡ TcC ≡ TwCH + TwCl + TrC + TlC - 30 = (65+65+20+20) - 30 = 140
+
+∴ Address valid to Data ready (max allowed): ((T3r - T1r) - TdCr(A)) - TsD(Cr)
+    (324 - 90) - 30 = 204
+  M1 valid to Data ready (max allowed): ((T3r - T1r) - TdCr(M1f)) - TsD(Cr)
+    (324 - 80) - 30 = 214
+  MREQ valid to Data ready (max allowed): (((T3r - T1r) - (TwCh + TfC)) - TdCf(MREQf)) - TsD(Cr)
+    ((324 - (65 + 20)) - 70) - 30 = (239 - 70) - 30 = 169 - 30 = 139
+  MR valid to Data ready (max allowed): (((T3r - T1r) - (TwCh + TfC)) - TdCf(RDf)) - TsD(Cr)
+    ((324 - (65 + 20)) - 80) - 30 = (239 - 80) - 30 = 159 - 30 = 129
+
+==============
+CLK @ 12MHz; Z84C0020 (CMOS Z80 20MHz)
+--------------
+1.  TcC         Clock Cycle time (min):                 83nS
+2.  TwCh        Clock Pulse width (high, min)           31.5nS
+3.  TwCl        Clock Pulse width (low, min)            31.5nS
+4.  TfC         Clock edge Fall time (max)              10nS
+5.  TrC         Clock edge Rise time (max)              10nS
+6.  TdCr(A)     Address valid from Clock Rise (max)     57nS
+7.  TdA(MREQf)  Address valid to /MREQ Fall (min)       -3.5nS
+8.  TdCf(MREQf) Clock Fall to /MREQ Fall delay (max)    40nS
+9.  TdCr(MREQr) Clock Rise to /MREQ Rise delay (max)    40nS
+10. TwMREQh     /MREQ pulse width (High, min)           21.5nS
+11. TwMREQl     /MREQ pulse width (Low, min)            58nS
+12. TdCf(MREQr) Clock Fall to /MREQ Rise delay (max)    40nS
+13. TdCf(RDf)   Clock Fall to /RD Fall delay (max)      40nS
+14. TdCr(RDr)   Clock Rise to /RD Rise delay (max)      40nS
+15. TsD(Cr)     Data setup time to Clock Rise (min)     12nS
+..
+19. TdCr(M1f)   Clock Rise to /M1 Fall delay (max)      45nS
+20. TdCr(M1r)   Clock Rise to /M1 Rise delay (max)      45nS
+
+Calculations:
+1.  TcC ≡ TwCh + TwCl + TrC + TlC = (31.5+31.5+10+10) = 83.0
+7.  TdA(MREQf) ≡ TwCh + TlC - 45 = (31.5+10) - 45 = -3.5
+10. TwMREQh ≡ TwCh + TlC - 20 = (31.5+10) - 20 = 21.5
+11. TwMREQl ≡ TcC ≡ TwCH + TwCl + TrC + TlC - 25 = (31.5+31.5+10+10) - 25 = 58
+
+∴ Address valid to Data ready (max allowed): ((T3r - T1r) - TdCr(A)) - TsD(Cr)
+    (166 - 57) - 12 = 97
+  M1 valid to Data ready (max allowed): ((T3r - T1r) - TdCr(M1f)) - TsD(Cr)
+    (166 - 45) - 12 = 109
+  MREQ valid to Data ready (max allowed): (((T3r - T1r) - (TwCh + TfC)) - TdCf(MREQf)) - TsD(Cr)
+    ((166 - (31.5 + 10)) - 40) - 12 = (124.5 - 40) - 12 = 84.5 - 12 = 72.5
+  MR valid to Data ready (max allowed): (((T3r - T1r) - (TwCh + TfC)) - TdCf(RDf)) - TsD(Cr)
+    ((166 - (31.5 + 10)) - 40) - 12 = (124.5 - 40) - 12 = 84.5 - 12 = 72.5
