@@ -156,7 +156,7 @@
       "teardrop_parameters": [
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 0,
+          "td_curve_segcount": 1,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -190,7 +190,13 @@
       ],
       "track_widths": [
         0.0,
-        0.508
+        0.2032,
+        0.254,
+        0.3048,
+        0.4064,
+        0.4572,
+        0.508,
+        1.9812
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -198,7 +204,7 @@
           "corner_style": 1,
           "max_amplitude": 1.0,
           "min_amplitude": 0.2,
-          "single_sided": false,
+          "single_sided": true,
           "spacing": 1.0
         },
         "diff_pair_skew_defaults": {
@@ -206,15 +212,15 @@
           "corner_style": 1,
           "max_amplitude": 1.0,
           "min_amplitude": 0.2,
-          "single_sided": false,
+          "single_sided": true,
           "spacing": 0.6
         },
         "single_track_defaults": {
           "corner_radius_percentage": 80,
-          "corner_style": 1,
+          "corner_style": 0,
           "max_amplitude": 1.0,
           "min_amplitude": 0.2,
-          "single_sided": false,
+          "single_sided": true,
           "spacing": 0.6
         }
       },
@@ -222,6 +228,14 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.635,
+          "drill": 0.3048
+        },
+        {
+          "diameter": 2.0828,
+          "drill": 1.27
         }
       ],
       "zones_allow_external_fillets": false
@@ -430,7 +444,7 @@
       "extra_units": "error",
       "footprint_filter": "ignore",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "error",
       "global_label_dangling": "error",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
@@ -443,9 +457,9 @@
       "missing_unit": "warning",
       "multiple_net_names": "error",
       "net_not_bus_member": "warning",
-      "no_connect_connected": "warning",
+      "no_connect_connected": "error",
       "no_connect_dangling": "warning",
-      "pin_not_connected": "error",
+      "pin_not_connected": "warning",
       "pin_not_driven": "error",
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
@@ -454,7 +468,7 @@
       "similar_labels": "warning",
       "similar_power": "warning",
       "simulation_model_issue": "error",
-      "single_global_label": "ignore",
+      "single_global_label": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -487,7 +501,7 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2032,
-        "via_diameter": 0.635,
+        "via_diameter": 0.5588,
         "via_drill": 0.3048,
         "wire_width": 6
       },
@@ -495,7 +509,7 @@
         "clearance": 0.254,
         "name": "GNDTR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.508,
         "via_diameter": 0.762,
@@ -507,12 +521,32 @@
         "line_style": 0,
         "name": "POWER",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.508,
         "via_diameter": 0.762,
         "via_drill": 0.381,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.508,
+        "name": "PWRSRCTR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 2.54,
+        "via_diameter": 3.81,
+        "via_drill": 2.032
+      },
+      {
+        "clearance": 0.508,
+        "name": "PWRTR",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 19.812,
+        "via_diameter": 2.032,
+        "via_drill": 1.5748
       }
     ],
     "meta": {
@@ -535,6 +569,10 @@
       {
         "netclass": "GNDTR",
         "pattern": "GND"
+      },
+      {
+        "netclass": "PWRSRCTR",
+        "pattern": "*+5IN"
       }
     ]
   },
@@ -543,7 +581,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "Plot/",
+      "plot": "Gerbers/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
@@ -615,7 +653,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -663,7 +701,7 @@
           "group_by": false,
           "label": "Function",
           "name": "Function",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -801,6 +839,66 @@
           "group_by": false,
           "label": "#",
           "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part",
+          "name": "Part",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Voltage",
+          "name": "Voltage",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "P3",
+          "name": "P3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Ind",
+          "name": "Ind",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "P2",
+          "name": "P2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "P1",
+          "name": "P1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Icon",
+          "name": "Icon",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Opt-A",
+          "name": "Opt-A",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Opt-B",
+          "name": "Opt-B",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "P4",
+          "name": "P4",
           "show": false
         }
       ],
