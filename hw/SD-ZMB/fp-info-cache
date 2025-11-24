@@ -1,4 +1,4 @@
-27059339933352713
+27062867873331489
 AES_Library
 AES-Amphenol_F51L_1x20_P1.00mm_Horizontal-FFC
 Molex Molex 1.00mm Pitch Easy-On BackFlip, Right-Angle, Bottom Contact FFC/FPC, 200528-0200, 20 Circuits (https://www.molex.com/pdm_docs/sd/2005280200_sd.pdf), generated with kicad-footprint-generator
@@ -363,6 +363,20 @@ SILKY-DESIGN-logo-0_50-AES
 0
 0
 0
+AES_Library
+SPARE-16-SOT-5_6-AES
+16-lead though-hole mounted DIP package, and SOT-5/6 for Spares
+THT DIP DIL PDIP 2.54mm 7.62mm 300mil SPARE SOT5 SOT6 SOT-5 SOT-6
+0
+32
+16
+AES_Library
+SPARE-and-SOIC-16-AES
+16-lead though-hole mounted DIP package, and SOIC-16 for Spares
+THT DIP DIL PDIP 2.54mm 7.62mm 300mil SPARE SOIC
+0
+16
+16
 AES_Library
 SW-SPDT-PCB-TGL-RA-AES
 Right angle PCB toggle switch. Power, selection, etc. MTS102C3, M201252A, E-Switch M6
