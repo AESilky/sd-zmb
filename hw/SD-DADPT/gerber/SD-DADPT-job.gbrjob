@@ -5,13 +5,13 @@
       "Application": "Pcbnew",
       "Version": "9.0.6"
     },
-    "CreationDate": "2025-11-14T14:39:25-08:00"
+    "CreationDate": "2025-11-24T10:33:25-08:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
       "Name": "SD-DADPT",
       "GUID": "53442d44-4144-4505-942e-6b696361645f",
-      "Revision": "PR-1.0"
+      "Revision": "PR-1.0b"
     },
     "Size": {
       "X": 85.14,
