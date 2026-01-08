@@ -7517,7 +7517,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "RP2040 Module Waveshare (tiny)"
+			(property "Description" "RP2040 Module Waveshare RP-ZERO"
 				(at 0.254 -20.574 0)
 				(effects
 					(font
@@ -7526,7 +7526,16 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "WAVESHARE PICO GPIO USBC USB-C"
+			(property "Function" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "WAVESHARE PICO GPIO USBC USB-C ZERO"
 				(at 0 0 0)
 				(effects
 					(font
@@ -15771,17 +15780,6 @@
 			)
 		)
 		(uuid "d0a47c84-17ab-4c0c-a046-44cf205fe902")
-	)
-	(text "KBD"
-		(exclude_from_sim no)
-		(at 312.42 196.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 0 0 0 1)
-			)
-		)
-		(uuid "ffd1e6ba-6521-4b37-9829-a187d0c7fbcf")
 	)
 	(junction
 		(at 361.95 87.63)
@@ -30034,7 +30032,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0b3c3f19-8f38-4392-a217-00fe055b5655")
-		(property "Reference" "U43"
+		(property "Reference" "U37"
 			(at 268.478 274.32 0)
 			(effects
 				(font
@@ -30157,7 +30155,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U43")
+					(reference "U37")
 					(unit 3)
 				)
 			)
@@ -30931,7 +30929,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1c36ba32-3080-4df5-a785-1e8073779288")
-		(property "Reference" "U35"
+		(property "Reference" "U22"
 			(at 201.93 33.02 0)
 			(effects
 				(font
@@ -31124,7 +31122,7 @@
 		(instances
 			(project ""
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U35")
+					(reference "U22")
 					(unit 1)
 				)
 			)
@@ -32087,8 +32085,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3009df4e-3fcd-477c-8072-9fd167e88ed2")
-		(property "Reference" "U33"
-			(at 119.38 38.1 0)
+		(property "Reference" "U26"
+			(at 116.586 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32244,7 +32242,7 @@
 		(instances
 			(project ""
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U33")
+					(reference "U26")
 					(unit 1)
 				)
 			)
@@ -32259,7 +32257,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "315dd3d1-729e-497b-b211-da8ba652b1f9")
-		(property "Reference" "U46"
+		(property "Reference" "U8"
 			(at 288.036 22.86 0)
 			(effects
 				(font
@@ -32356,7 +32354,7 @@
 		(instances
 			(project ""
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U46")
+					(reference "U8")
 					(unit 1)
 				)
 			)
@@ -32967,7 +32965,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3f3365b7-bcab-4c00-99ba-e3d7e2034a95")
-		(property "Reference" "M2"
+		(property "Reference" "DISP1"
 			(at 298.45 114.554 0)
 			(effects
 				(font
@@ -33140,7 +33138,7 @@
 		(instances
 			(project ""
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "M2")
+					(reference "DISP1")
 					(unit 1)
 				)
 			)
@@ -33738,7 +33736,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d260d70-86cc-46e8-9fc9-600805f3368f")
-		(property "Reference" "U34"
+		(property "Reference" "U7"
 			(at 193.802 133.604 0)
 			(effects
 				(font
@@ -33861,7 +33859,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U34")
+					(reference "U7")
 					(unit 1)
 				)
 			)
@@ -34429,7 +34427,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5eb44665-2e52-40e8-906b-3c4bd58e3842")
-		(property "Reference" "U39"
+		(property "Reference" "U41"
 			(at 367.538 241.3 0)
 			(effects
 				(font
@@ -34544,7 +34542,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U39")
+					(reference "U41")
 					(unit 6)
 				)
 			)
@@ -34852,7 +34850,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6598e740-64b6-434d-ae94-ec700b703caa")
-		(property "Reference" "C44"
+		(property "Reference" "C46"
 			(at 41.656 130.556 90)
 			(effects
 				(font
@@ -34939,7 +34937,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "C44")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -36874,7 +36872,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a649e33f-d0d0-4193-ba73-ef8df8b50c81")
-		(property "Reference" "C38"
+		(property "Reference" "C45"
 			(at 267.716 28.194 90)
 			(effects
 				(font
@@ -36926,7 +36924,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "C38")
+					(reference "C45")
 					(unit 1)
 				)
 			)
@@ -37104,7 +37102,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a848cc0b-4c14-46b2-aa8a-0cf1fd3fcdd5")
-		(property "Reference" "U4"
+		(property "Reference" "U17"
 			(at 216.154 289.56 0)
 			(effects
 				(font
@@ -37227,7 +37225,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U4")
+					(reference "U17")
 					(unit 4)
 				)
 			)
@@ -38436,7 +38434,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b93e90e7-32d9-4819-b88a-e16cc84c02b2")
-		(property "Reference" "U37"
+		(property "Reference" "U43"
 			(at 348.996 258.064 0)
 			(effects
 				(font
@@ -38533,7 +38531,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U37")
+					(reference "U43")
 					(unit 1)
 				)
 			)
@@ -38614,7 +38612,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bc0818fe-e7d4-40cb-8acb-9709ba53b6ec")
-		(property "Reference" "U31"
+		(property "Reference" "U1"
 			(at 32.004 33.274 0)
 			(effects
 				(font
@@ -38711,7 +38709,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U31")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -39225,7 +39223,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca91d0f8-64eb-4417-8d69-b0a5a89b3dfd")
-		(property "Reference" "C39"
+		(property "Reference" "C44"
 			(at 280.416 19.304 90)
 			(effects
 				(font
@@ -39277,7 +39275,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "C39")
+					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -39370,7 +39368,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cc9b6e07-60c6-4832-a7c8-f071fd530fe1")
-		(property "Reference" "U43"
+		(property "Reference" "U37"
 			(at 313.436 274.828 0)
 			(effects
 				(font
@@ -39487,7 +39485,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U43")
+					(reference "U37")
 					(unit 5)
 				)
 			)
@@ -39502,7 +39500,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cceb0dcc-dd76-414c-b134-c3aedaf3d9fc")
-		(property "Reference" "U45"
+		(property "Reference" "M2"
 			(at 312.42 214.884 0)
 			(effects
 				(font
@@ -39545,31 +39543,12 @@
 				(hide yes)
 			)
 		)
-		(property "CPU" ""
-			(at 312.42 214.63 0)
+		(property "Function" "USB KBD"
+			(at 312.42 196.342 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "OPT-A" ""
-			(at 312.42 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OPT-B" ""
-			(at 312.42 214.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
 			)
 		)
 		(pin "4"
@@ -39644,7 +39623,7 @@
 		(instances
 			(project ""
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U45")
+					(reference "M2")
 					(unit 1)
 				)
 			)
@@ -39659,7 +39638,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cdf16822-fbdd-4adb-95a1-fbe88cd41b07")
-		(property "Reference" "U43"
+		(property "Reference" "U37"
 			(at 268.478 261.62 0)
 			(effects
 				(font
@@ -39782,7 +39761,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U43")
+					(reference "U37")
 					(unit 2)
 				)
 			)
@@ -41005,7 +40984,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ecd88f6e-9f62-465d-bb8b-e685d892da1e")
-		(property "Reference" "U43"
+		(property "Reference" "U37"
 			(at 268.224 287.02 0)
 			(effects
 				(font
@@ -41128,7 +41107,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U43")
+					(reference "U37")
 					(unit 4)
 				)
 			)
@@ -41143,7 +41122,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f13e970d-0090-42ec-a21e-2b1b6aade66b")
-		(property "Reference" "U43"
+		(property "Reference" "U37"
 			(at 309.118 243.84 0)
 			(effects
 				(font
@@ -41266,7 +41245,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U43")
+					(reference "U37")
 					(unit 1)
 				)
 			)
@@ -41281,7 +41260,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f191bcad-3a79-4b05-9e9b-46f5999e1722")
-		(property "Reference" "U47"
+		(property "Reference" "U33"
 			(at 385.826 259.334 0)
 			(effects
 				(font
@@ -41369,7 +41348,7 @@
 		(instances
 			(project ""
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U47")
+					(reference "U33")
 					(unit 1)
 				)
 			)
@@ -41881,7 +41860,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f9412887-b40c-4a72-afd8-f25d9515a989")
-		(property "Reference" "U5"
+		(property "Reference" "U15"
 			(at 194.564 121.92 0)
 			(effects
 				(font
@@ -42004,7 +41983,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/c744ff77-26bb-4e1e-8dbf-a9eea5814d68"
-					(reference "U5")
+					(reference "U15")
 					(unit 4)
 				)
 			)

@@ -37540,7 +37540,7 @@
 				)
 			)
 		)
-		(property "Value" "74HCT688"
+		(property "Value" "74FCT521"
 			(at 183.134 169.164 0)
 			(effects
 				(font
@@ -37582,6 +37582,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "ALT" "(74HCT688)"
+			(at 183.642 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"

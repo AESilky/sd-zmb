@@ -9870,6 +9870,379 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "AES_Library:SPARE-16-AES"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "SPARE"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Symbol to use when placing spares on a PCB. Match with one of the 16 pin footprints."
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Function" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "SPARE 16PIN THT-SMD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SPARE-16-AES_1_1"
+				(rectangle
+					(start -3.81 10.16)
+					(end 3.81 -10.16)
+					(stroke
+						(width 0)
+						(type dot)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin free line
+					(at -6.35 8.89 0)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at -6.35 6.35 0)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at -6.35 3.81 0)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at -6.35 1.27 0)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at -6.35 -1.27 0)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at -6.35 -3.81 0)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at -6.35 -6.35 0)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at -6.35 -8.89 0)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 6.35 8.89 180)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 6.35 6.35 180)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 6.35 3.81 180)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 6.35 1.27 180)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 6.35 -1.27 180)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 6.35 -3.81 180)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 6.35 -6.35 180)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin free line
+					(at 6.35 -8.89 180)
+					(length 2.54)
+					(name "UC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -12537,7 +12910,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "01327896-c05b-4e31-bf3d-8348b2ee3262")
-		(property "Reference" "U20"
+		(property "Reference" "U46"
 			(at 110.49 36.83 0)
 			(effects
 				(font
@@ -12591,33 +12964,6 @@
 				(hide yes)
 			)
 		)
-		(property "CPU" ""
-			(at 113.03 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OPT-A" ""
-			(at 113.03 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OPT-B" ""
-			(at 113.03 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "12"
 			(uuid "ae678ad1-3e02-479a-a662-d4a76b3d1787")
 		)
@@ -12663,7 +13009,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U20")
+					(reference "U46")
 					(unit 4)
 				)
 			)
@@ -13447,7 +13793,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1f71643f-635c-4f10-95ec-e99fad78f92c")
-		(property "Reference" "U6"
+		(property "Reference" "U27"
 			(at 23.622 37.084 0)
 			(effects
 				(font
@@ -13564,7 +13910,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U6")
+					(reference "U27")
 					(unit 5)
 				)
 			)
@@ -13674,7 +14020,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "259a02bc-c136-41c8-898c-0c68cd82e50c")
-		(property "Reference" "U42"
+		(property "Reference" "U40"
 			(at 236.474 37.084 0)
 			(effects
 				(font
@@ -13800,7 +14146,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U42")
+					(reference "U40")
 					(unit 3)
 				)
 			)
@@ -15137,7 +15483,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "47736920-7a0b-49a8-ab7a-384d1b6b92bb")
-		(property "Reference" "U29"
+		(property "Reference" "U20"
 			(at 148.59 37.592 0)
 			(effects
 				(font
@@ -15182,33 +15528,6 @@
 		)
 		(property "PropDly" "(5nS)"
 			(at 148.336 40.132 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "CPU" ""
-			(at 148.59 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OPT-A" ""
-			(at 148.59 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OPT-B" ""
-			(at 148.59 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15261,7 +15580,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U29")
+					(reference "U20")
 					(unit 4)
 				)
 			)
@@ -15276,7 +15595,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "49bd29ba-29e2-4c4e-8955-e17d9445351d")
-		(property "Reference" "U32"
+		(property "Reference" "U35"
 			(at 180.34 36.83 0)
 			(effects
 				(font
@@ -15393,7 +15712,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U32")
+					(reference "U35")
 					(unit 3)
 				)
 			)
@@ -15408,7 +15727,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4b9b884d-7d3e-439e-b117-15af78630b66")
-		(property "Reference" "U4"
+		(property "Reference" "U17"
 			(at 67.31 36.83 0)
 			(effects
 				(font
@@ -15534,7 +15853,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U4")
+					(reference "U17")
 					(unit 5)
 				)
 			)
@@ -15912,7 +16231,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4fb98929-1132-440e-ac9f-7fe411a02a19")
-		(property "Reference" "U41"
+		(property "Reference" "U45"
 			(at 123.698 37.084 0)
 			(effects
 				(font
@@ -16023,7 +16342,7 @@
 		(instances
 			(project ""
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U41")
+					(reference "U45")
 					(unit 3)
 				)
 			)
@@ -16480,7 +16799,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6650a35d-4624-460c-bda2-426fdf21f3df")
-		(property "Reference" "U39"
+		(property "Reference" "U41"
 			(at 56.642 37.084 0)
 			(effects
 				(font
@@ -16597,7 +16916,7 @@
 		(instances
 			(project ""
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U39")
+					(reference "U41")
 					(unit 7)
 				)
 			)
@@ -17027,7 +17346,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "73cdec38-881d-4b8a-884d-c72d8fb3d076")
-		(property "Reference" "U20"
+		(property "Reference" "U46"
 			(at 285.496 36.83 0)
 			(effects
 				(font
@@ -17080,33 +17399,6 @@
 				(hide yes)
 			)
 		)
-		(property "CPU" ""
-			(at 285.75 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OPT-A" ""
-			(at 285.75 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OPT-B" ""
-			(at 285.75 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "38b3e8d9-a88e-41e4-ab0c-40523bffeca3")
 		)
@@ -17152,7 +17444,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U20")
+					(reference "U46")
 					(unit 3)
 				)
 			)
@@ -17484,7 +17776,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "89bfd941-a0a3-44f3-b445-fc151e80c898")
-		(property "Reference" "U5"
+		(property "Reference" "U15"
 			(at 77.47 36.83 0)
 			(effects
 				(font
@@ -17610,7 +17902,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U5")
+					(reference "U15")
 					(unit 5)
 				)
 			)
@@ -17942,7 +18234,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "93980c57-b2eb-4894-83f1-065840c6d819")
-		(property "Reference" "U11"
+		(property "Reference" "U29"
 			(at 190.5 36.83 0)
 			(effects
 				(font
@@ -18059,7 +18351,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U11")
+					(reference "U29")
 					(unit 3)
 				)
 			)
@@ -18330,6 +18622,125 @@
 		)
 	)
 	(symbol
+		(lib_id "AES_Library:SPARE-16-AES")
+		(at 49.53 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ec9dd2c-7855-46cd-a22c-8a8eb8e48ac0")
+		(property "Reference" "SPARE2"
+			(at 49.784 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 49.784 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "AES_Library:SPARE-16-SOT-5_6-AES"
+			(at 49.53 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Symbol to use when placing spares on a PCB. Match with one of the 16 pin footprints."
+			(at 49.53 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" ""
+			(at 49.53 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "f1f18427-c3ad-4f09-9b09-fc95d3426a39")
+		)
+		(pin "2"
+			(uuid "4f2f19f7-d549-4bad-8d79-5e24a0c8179e")
+		)
+		(pin "4"
+			(uuid "79615fa6-3df6-42e4-b269-f1ffba6d1575")
+		)
+		(pin "6"
+			(uuid "c4a4d6a6-6220-4215-9a3b-ca438dacc123")
+		)
+		(pin "7"
+			(uuid "828acad5-c966-47be-bbc8-dfeacbb616f7")
+		)
+		(pin "13"
+			(uuid "6751da4f-11d9-4451-8d65-bbcaac8320d0")
+		)
+		(pin "12"
+			(uuid "fa1c4cf2-e48c-4a53-9164-dd9de8785053")
+		)
+		(pin "16"
+			(uuid "adce4398-2016-425f-a98a-bbe0bada17b9")
+		)
+		(pin "5"
+			(uuid "8e467dd6-f46d-4899-aade-169f1b424c4f")
+		)
+		(pin "8"
+			(uuid "540ca9fe-7a7a-4efe-95b2-6cf66b91f862")
+		)
+		(pin "3"
+			(uuid "3e6c44e6-4292-49f6-af8d-7c07139da116")
+		)
+		(pin "14"
+			(uuid "90d757df-e430-4b4f-97e8-d46c04733d3b")
+		)
+		(pin "11"
+			(uuid "2a91685f-f17c-4f81-b3c7-718233f729d3")
+		)
+		(pin "9"
+			(uuid "942f1d9d-ab34-4a21-8920-0334bff04317")
+		)
+		(pin "10"
+			(uuid "db625980-5c72-41b0-870a-2a89e71a1d82")
+		)
+		(pin "1"
+			(uuid "d3c0d020-d37a-4d6e-974e-0ff9dacad1ef")
+		)
+		(instances
+			(project "SD-ZMB"
+				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
+					(reference "SPARE2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74LS21")
 		(at 308.61 36.83 0)
 		(unit 2)
@@ -18338,7 +18749,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9f8f96ff-7c5b-4f96-88c5-ae29fd018a1a")
-		(property "Reference" "U41"
+		(property "Reference" "U45"
 			(at 307.848 36.83 0)
 			(effects
 				(font
@@ -18447,7 +18858,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U41")
+					(reference "U45")
 					(unit 2)
 				)
 			)
@@ -18980,7 +19391,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b1acd090-4197-498c-a67b-098c0b8a5340")
-		(property "Reference" "U34"
+		(property "Reference" "U7"
 			(at 99.568 36.83 0)
 			(effects
 				(font
@@ -19105,7 +19516,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U34")
+					(reference "U7")
 					(unit 4)
 				)
 			)
@@ -19186,7 +19597,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b367a5c0-2bca-45fa-b575-206466d0da45")
-		(property "Reference" "U7"
+		(property "Reference" "U13"
 			(at 44.958 37.338 0)
 			(effects
 				(font
@@ -19312,7 +19723,7 @@
 		(instances
 			(project ""
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U7")
+					(reference "U13")
 					(unit 5)
 				)
 			)
@@ -19445,33 +19856,6 @@
 				(hide yes)
 			)
 		)
-		(property "CPU" ""
-			(at 138.43 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OPT-A" ""
-			(at 138.43 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "OPT-B" ""
-			(at 138.43 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "eede7b99-a6cd-4924-b090-82691dab4c73")
 		)
@@ -19532,7 +19916,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b446f20f-7478-43b2-9c18-b0f9d28ddaa0")
-		(property "Reference" "U8"
+		(property "Reference" "U28"
 			(at 33.782 37.084 0)
 			(effects
 				(font
@@ -19649,7 +20033,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U8")
+					(reference "U28")
 					(unit 5)
 				)
 			)
@@ -19716,6 +20100,125 @@
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
 					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "AES_Library:SPARE-16-AES")
+		(at 33.02 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "b82ccbeb-ba4e-45d1-bf24-2ed2d1247c35")
+		(property "Reference" "SPARE1"
+			(at 33.274 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 33.274 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "AES_Library:SPARE-and-SOIC-16-AES"
+			(at 33.02 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Symbol to use when placing spares on a PCB. Match with one of the 16 pin footprints."
+			(at 33.02 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" ""
+			(at 33.02 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "cc7a3a91-81aa-4548-bc19-727f204e55cc")
+		)
+		(pin "2"
+			(uuid "281616c9-bc31-4928-9899-07865e58677b")
+		)
+		(pin "4"
+			(uuid "40a8c6d9-690d-423c-88df-d4b0512aea07")
+		)
+		(pin "6"
+			(uuid "c622bc92-60fe-43a2-a965-b97fef4aa26d")
+		)
+		(pin "7"
+			(uuid "58fcea47-e937-40eb-8334-b77bf6cfcc0f")
+		)
+		(pin "13"
+			(uuid "277b1d67-8f8e-48a1-bc91-299cb6ec7e2e")
+		)
+		(pin "12"
+			(uuid "29476f6f-f997-4007-a56a-be7a23119978")
+		)
+		(pin "16"
+			(uuid "ade85c36-db52-489a-835d-b2096a371f71")
+		)
+		(pin "5"
+			(uuid "cb1662a1-a4db-4e4d-9689-7045010ec93a")
+		)
+		(pin "8"
+			(uuid "1b31cf83-ec43-4c1c-83b8-01bf64062ed1")
+		)
+		(pin "3"
+			(uuid "4adc9014-5470-483a-bcc8-092f32509b31")
+		)
+		(pin "14"
+			(uuid "961f2519-5197-4989-bc43-6f30fbf0c729")
+		)
+		(pin "11"
+			(uuid "10b2592a-52ec-4819-9248-4fb8a2fef338")
+		)
+		(pin "9"
+			(uuid "bb1ccdb6-7767-46e0-bb8f-1b2313c16e2a")
+		)
+		(pin "10"
+			(uuid "956caea7-32f9-445a-ab17-f7985c0ead57")
+		)
+		(pin "1"
+			(uuid "020440d4-6522-4628-8635-d7e464311697")
+		)
+		(instances
+			(project ""
+				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
+					(reference "SPARE1")
 					(unit 1)
 				)
 			)
@@ -20252,7 +20755,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cac16589-1ce8-4d49-b480-db5b8293fd82")
-		(property "Reference" "U38"
+		(property "Reference" "U39"
 			(at 158.242 37.084 0)
 			(effects
 				(font
@@ -20369,7 +20872,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U38")
+					(reference "U39")
 					(unit 5)
 				)
 			)
@@ -21182,7 +21685,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e0e08c2e-97c5-4620-a63d-80c55a77d850")
-		(property "Reference" "U10"
+		(property "Reference" "U4"
 			(at 226.314 37.084 0)
 			(effects
 				(font
@@ -21308,7 +21811,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U10")
+					(reference "U4")
 					(unit 3)
 				)
 			)
@@ -21541,6 +22044,125 @@
 		)
 	)
 	(symbol
+		(lib_id "AES_Library:SPARE-16-AES")
+		(at 66.04 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "f39b0917-9e7a-4834-a2aa-5e2dc7b34db4")
+		(property "Reference" "SPARE3"
+			(at 66.294 103.886 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 66.294 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "AES_Library:SPARE-16-SOT-5_6-AES"
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Symbol to use when placing spares on a PCB. Match with one of the 16 pin footprints."
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Function" ""
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "15"
+			(uuid "1c32385b-35a0-422b-a492-08d0dcc459b4")
+		)
+		(pin "2"
+			(uuid "108231bd-376a-4d6b-9b3c-8dc49b655f6c")
+		)
+		(pin "4"
+			(uuid "e83b6c22-899a-4c6d-8ced-918d73123133")
+		)
+		(pin "6"
+			(uuid "ba3ad68b-1b8d-4ea0-b9c4-f829a1d578b1")
+		)
+		(pin "7"
+			(uuid "534d3621-977e-4d6c-a24c-53309d068346")
+		)
+		(pin "13"
+			(uuid "d9d826d1-7a64-4773-bacb-36d691308088")
+		)
+		(pin "12"
+			(uuid "ab81ef39-c0f5-4382-afd6-84ec7135aead")
+		)
+		(pin "16"
+			(uuid "46c77f0b-d9d0-4b42-89c7-d7e2e57235df")
+		)
+		(pin "5"
+			(uuid "aa69fbd3-bd88-4ba9-89d6-fab861e12979")
+		)
+		(pin "8"
+			(uuid "ad86696b-b136-457b-b002-addaa9cacaa5")
+		)
+		(pin "3"
+			(uuid "2bb7182c-257d-4d42-83ba-b9dbb59364a8")
+		)
+		(pin "14"
+			(uuid "1b8518a7-8eaa-4872-b75f-c8ec2b7bd23c")
+		)
+		(pin "11"
+			(uuid "45830cbd-0ad0-4931-a985-788fd382c63c")
+		)
+		(pin "9"
+			(uuid "09710bf0-01ac-44ca-bf05-d4de54456866")
+		)
+		(pin "10"
+			(uuid "fa07aae1-5db0-4a9c-bf53-9f0f34c92fdb")
+		)
+		(pin "1"
+			(uuid "bc2a2037-7677-490c-a895-91380e9c00cc")
+		)
+		(instances
+			(project "SD-ZMB"
+				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
+					(reference "SPARE3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 127 64.77 180)
 		(unit 1)
@@ -21737,7 +22359,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fb4d21c4-7095-42ee-a871-7aca48b0e1e4")
-		(property "Reference" "U9"
+		(property "Reference" "U16"
 			(at 167.64 36.83 0)
 			(effects
 				(font
@@ -21863,7 +22485,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U9")
+					(reference "U16")
 					(unit 5)
 				)
 			)
@@ -22104,7 +22726,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fda8ec09-26f3-47f3-90cd-893d35438cb5")
-		(property "Reference" "U2"
+		(property "Reference" "U38"
 			(at 200.914 36.83 0)
 			(effects
 				(font
@@ -22221,7 +22843,7 @@
 		(instances
 			(project "SD-ZMB"
 				(path "/62236e9f-ef27-467c-852b-587c32c473f1/4d930499-c077-45d5-a71c-439550a6ae18"
-					(reference "U2")
+					(reference "U38")
 					(unit 3)
 				)
 			)
