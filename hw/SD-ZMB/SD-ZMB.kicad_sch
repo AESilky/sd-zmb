@@ -1,0 +1,148 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "62236e9f-ef27-467c-852b-587c32c473f1")
+	(paper "User" 419.1 323.85)
+	(title_block
+		(title "Retro Z80 Motherboard w/Paripherals & RC2014 Bus")
+		(date "2025-10-19")
+		(rev "PR8.2")
+		(company "SilkyDESIGN")
+		(comment 1 "Copyright 2025 AESilky & SMcCown")
+	)
+	(lib_symbols)
+	(sheet
+		(at 30.48 27.94)
+		(size 68.58 43.18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "48cc9b60-debe-432c-ac2c-bb1cba6b9068")
+		(property "Sheetname" "MainBoard-CPU_Decode"
+			(at 30.48 27.2284 0)
+			(show_name yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mainboard.kicad_sch"
+			(at 30.48 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SD-ZMB"
+				(path "/62236e9f-ef27-467c-852b-587c32c473f1"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 102.87 81.28)
+		(size 67.31 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4d930499-c077-45d5-a71c-439550a6ae18")
+		(property "Sheetname" "LOGIC_PWR_SPARES"
+			(at 102.87 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "logic_pwr_spr.kicad_sch"
+			(at 102.87 126.3146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SD-ZMB"
+				(path "/62236e9f-ef27-467c-852b-587c32c473f1"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 81.28)
+		(size 68.58 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c744ff77-26bb-4e1e-8dbf-a9eea5814d68")
+		(property "Sheetname" "ExpIFC-SIOCTC"
+			(at 30.48 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "exp-ifc.kicad_sch"
+			(at 30.48 126.3146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SD-ZMB"
+				(path "/62236e9f-ef27-467c-852b-587c32c473f1"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,43 @@
+Zbus <=> Bbus Logic
+ZD: Z80 Data
+ZC: Z80 Control (MREQ, IORQ, RD, WR)
+ZA0_15: Z80 Address (16 bits, all from the Z80)
+ZA0_12+MHA13_23: Main Board Memory Address (24 bits, 13 from Z80 + 8 from paging + 3 from Bus)
+BD: Bus Data
+BC: Bus Control
+BA: Bus Address (24 bits, BA00_23)
+
+ZMaster: The Z80 is the system master
+!ZMaster: A Bus Device is the system master
+MM: Main-board Memory
+MI: Main-board I/O
+BM: Bus Memory
+BI: Bus I/O
+WR: Write
+RD: Read
+IA: Interrupt Acknowledge
+--------------------------------------------------------------------------
+ZC=>BC: ZMaster
+BC=>ZC: !ZMaster
+
+--------------------------------------------------------------------------
+ZD=>BD: (ZMaster && !RD) || (!ZMaster && (RD || MIA))
+BD=>ZD: (!ZMaster && !RD) || (ZMaster && (RD || BIA))
+
+ZD=>BD: (ZMaster ^ RD) || (IA && (ZMaster ^ MIA))
+ else BD=>ZD
+
+--------------------------------------------------------------------------
+ZA0_12=>BA: ZMaster && (BM || BI)
+MHA16_23=>BA: ZMaster && BM {|| BI is okay}
+
+BA=>ZA0_12: !ZMaster && (MM || MI)
+BA=>MHA16_23: !ZMaster && MM {|| MI is okay}
+
+
+ZA13_15=>BA: ZMaster && BI
+MHA13_15=>BA: ZMaster && BM
+
+BA=>Z13_15: !ZMaster && MI
+BA=>MHA13_15: !ZMaster && MM
+
