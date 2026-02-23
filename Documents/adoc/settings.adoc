@@ -1,0 +1,21 @@
+// AsciiDoc settings to apply across all manuals
+// Use: `include::settings.adoc[]`
+//
+// Settings:
+:experimental:
+:reproducible:
+:icons: font
+:listing-caption: Listing
+//:sectnums:
+:toc: macro
+:toclevels: 4
+ifeval::["{asciidoctor-version}" < "1.5.7"]
+:legacy-footnoteref:
+endif::[]
+ifdef::backend-pdf[]
+:pdf-theme: doc-theme
+:pdf-themesdir: {docdir}/../adoc
+:source-highlighter: rouge
+//:rouge-style: github
+:media: prepress
+endif::[]

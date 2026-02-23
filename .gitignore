@@ -12,6 +12,9 @@
 *.map
 *.exp
 
+# ROM binaries (to include a binary add an explicit '!' line)
+*.bin
+
 # Precompiled Headers
 *.gch
 *.pch
@@ -35,6 +38,10 @@
 *.i*86
 *.x86_64
 *.hex
+
+# Listings
+*.lst
+*.txt
 
 # Debug files
 *.dSYM/

@@ -1,0 +1,136 @@
+= RP2040-Module: Technical Design
+include::../adoc/settings.adoc[]
+:organization: SilkyDESIGN
+// Multi-Part Book: [Quick Start][User Guide]
+:doctype: book
+:description: Technical design for the RP2040 Module.
+:imagesdir: ./images
+
+toc::[]
+
+[introduction]
+= Introduction
+The RP2040 Module is used to provide an interface from an 8-bit CPU bus to multiple peripherals, 
+such as a USB keyboard, SD-Card, RTC and other I2C devices. 
+
+The module uses GPIO pins for the CPU bus
+interface, with 8 data bits, a module select *ms-*(((ms-, module select))), read *rd-*, write *wr-*, 
+and address (control/data) *addr*, inputs, and wait *wait-* and interrupt request *int-* outputs.
+
+It uses the built-in USB port to interface to a keyboard, SPI (through GPIO pins) for an SD-Card, and I2C 
+(through GPIO pins) for an RTC module (and possibly other devices).
+
+[preface%nonfacing]
+= Preface
+Needed?
+
+[%nonfacing]
+== Address 0/1 - Control and Data (Registers)
+The module uses two addresses in the main system. One for module control and the other for peripheral
+control and data. Each address can be written and read. The specifics of what is written and read
+depends on the address and the selected peripheral.
+
+=== Addr LOW - Module Control (Register 0)
+The *addr* pin LOW selects the *Module Control* register. The Module Control register contains the
+following bits:
+
+[cols="1,1,1,1,1,1,1,1,1"]
+|===
+|7|6|5|4|3|2|1|0|
+| | | | | | | |*| Function Control/Data
+| | | | |*|*|*| | Function Select
+| | | |*| | | | | Interrupt Enable
+| | | | | | | | |
+| |*| | | | | | | Busy (read)
+|*| | | | | | | | Interrupt Pending (read)
+|*| | | | | | | | Interrupt Being Serviced/Clear
+|===
+
+=== Addr HIGH - Function Dependent (Register 1)
+The *addr* pin HIGH selects register 1 which is used by the module functions. The meaning/use of
+register 1 depends on which function is selected. It also depends on the state of bit-0 of the
+control register. When the control register bit-0 is 0, register 1 is typically used for function
+control. When the control register bit-0 is 1, register 1 is typically used for data.
+
+The following sections describe Register 0 and the use of Register 1 for the main module control
+functionality in more detail.
+
+=== Register 0 Bit Usage
+Register 0 is used to control the high-level functionality of the module as follows:
+
+Bit 0       Controls whether Register 1 is function control (0) or function data (1)
+Bits 1-3    Function select
+    000     Module
+    001     Keyboard
+    010     RTC
+    011     -TDB-
+    100     SD Card (func 0 - IDE)
+    101     SD Card (func 1 - FILES)
+    110     SD Card (func 2 - RAW)
+    111     SD Card (func 3 - NVRAM)
+Bit 4       Interrupt Enable (write) / Enabled (read)
+Bit 5       -TBD-
+Bit 6       -TBD-
+Bit 7       Interrupt Pending (read)
+            Interrupt Being Serviced (write '1')
+            Interrupt Clear (write '0')
+
+==== Bit 7 - Interrupt Pending (read) / Servicing:Clear (write 1:0)
+When reading register 0, bit 7 '1' indicates that an interrupt is pending. When an interrupt is
+pending, writing bit 7 as '1' at the same time as selecting a function with bits 1-3 (along with bit 0)
+pauses the currently selected function, stores it, and selects the indicated function. This allows
+servicing an interrupt from a function that is different than the function currently in use. Each
+time register 0 is written, but 7 should be written as 1 while interrupts are being serviced. Once
+bit 7 has been written with '1', writing it with '0' resets the interrupt pending flag and will
+allow the module to generate another interrupt if interrupts are enabled (bit 4 is 1). In addition to
+resetting the interrupt pending, the write of '0' also restores the previously selected function as
+the active function regardless of what is written to bits 0-3. This allows the continued processing
+of the interrupted function without any additional changes to the module.
+
+
+[%nonfacing]
+== Bus Service
+The module uses 8 GPIO pins for a bidirectional data bus, 4 GPIO for module select, write, read, and address
+inputs, and 2 GPIO pins as wait request and interrupt request outputs. The GPIOs are monitored and
+controlled by the RP2040 Programmable I/O (PIO).
+
+=== PIO State Machine Use
+Two state machines are used to wait for Module Select together with Read or Write. One State
+Machine waits on an internal interrupt bit to be set, signalling that the data bus needs to be
+read and the data transferred in.
+
+One State Machine waits on Module Select (MS-). Once MS- is detected, RD- is checked along with MS-.
+If both are detected together the WAIT- pin is activated and an interrupt is generated to the module CPU
+
+A second State Machine waits on Module Select (MS-). Once MS- is detected, WR- is checked along with MS-.
+If both are detected together the WAIT- pin is activated and an interrupt bit is set to trigger
+another State Machine to read the bus.
+
+A third State Machine waits on an interrupt bit to be set. Once the interrupt is set, allowing the
+State Machine to continue, the 8 data pins are read and the data pushed to the ISR. The State
+Machine then goes back to waiting on the interrupt bit.
+
+A forth State Machine waits on data arriving in the OSR and when data is available it sets the
+8 data pins to output, writes the byte, clears the WAIT- pin, and sets in interrupt bit.
+
+
+[%nonfacing]
+==== ((sec-level-4))
+This is a 4th level section
+
+ifeval::["{backend}" == "pdf"]
+[index]
+= Index
+endif::[]
+
+[colophon]
+= Colophon
+This is the design document for ((RP2040-Module)) ((Version 0.1.0))
+Edit date: 1-17-2026
+
+MIT License
+
+Copyright (c) 2020-24 PyKOB - MorseKOB in Python
+
+This document is authored using *asciidoc*, and the pdf version rendered through
+*asciidoctor-pdf*, to create a manual that is more readable and more pleasing to the eye.
