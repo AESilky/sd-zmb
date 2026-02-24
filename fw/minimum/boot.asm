@@ -85,7 +85,7 @@ init2:		ld	(hl),a
 		ld	sp,0
 		ld	hl,0
 		push	hl		; 0 at top of stack
-		ld	a,001h		; All RED LEDs were on, turn LEDR0 off
+		ld	a,LEDR0		; All RED LEDs were on, turn LEDR0 off
 		ld	(bdctrl),a
 		out	(BRDCTRL),a
 		; Initialize the CTC to be used for the SIO BAUD clocks
@@ -93,19 +93,23 @@ init2:		ld	(hl),a
 		call	ctc_minit
 		jr	nz,init3
 		ld	a,(bdctrl)	; Turn LEDR1 off if CTC init succeeded
-		set	2,a
+		set	LEDR1b,a
 		ld	(bdctrl),a
 		out	(BRDCTRL),a
-init3:		ld	(bdctrl),a
-		; Initialize the SIO
+		ld	a,BF_CTCPI	; 1st update to bdfunc, so simple write is ok
+		ld	(bdfunc),a
+init3:		; Initialize the SIO
 		ld	de,intvec+IVCNT_CTC
 		call	sio_minit
 		ld	a,EMCFONT1	; If SIO init fails, the display will be FONT1
 		jr	nz,init4
 		ld	a,(bdctrl)	; Turn LEDR2 off if SIO init succeeded
-		set	3,a
+		set	LEDR2b,a
 		ld	(bdctrl),a
 		out	(BRDCTRL),a
+		ld	a,(bdfunc)
+		or	BF_COMA|BF_COMB	; COMA and COMB are available
+		ld	(bdfunc),a
 		;  The SIO RTSb drives the Font select and will be HIGH at reset (FONT1).
 		DispFont0_EN		; Enable Display Font-0 (macro)
 		ld	a,EMCFONT0
@@ -116,8 +120,13 @@ init4:		; Initialize the Display.
 		xor	a
 init4b:		ld	(bdfunc),a 	; Mark if the display is present or not
 		ld	hl,hello_world
+		ld	b,EOS
 		call	disps
 		;
+		; Initialize the Interrupt Vector
+		ld	de,intvec
+		ld	a,d
+		ld	i,a
 
 onrst38:
 		jp	onrst38

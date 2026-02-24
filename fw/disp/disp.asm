@@ -287,8 +287,9 @@ dispc_:		; A holds Character
 
 
 disps_:		; HL holds pointer to string
+		; B is term char
 		ld	a,(hl)
-		cp	EOS
+		cp	b
 		ret	z
 		ld	d,l
 		call	dispc_

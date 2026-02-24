@@ -48,25 +48,38 @@ MPAGEREG	.equ	0B0h		; Memory Page Register (low-byte)
 MPAGINGEN	.equ	0B8h		; Write: 1=Enable 0=Disable
 
 ;
-; Board Control Bits - At Reset this register is ALL 0
+; Board Control Bits - At Reset this register is ALL 0 (so the RED LEDs are ON)
 ;
 RC8PAGE		.equ	00010000b	; Bit that goes to the RC8 Bus PAGE (pin 60)
+RC8PAGEb	.equ	5		;  bit 5
 DISPBKLT	.equ	00100000b	; Display Backlight Control: 0=ON 1=OFF
+DISPBKLTb	.equ	6		;  bit 6
 CLKFAST		.equ	01000000b	; Force Clock Fast - doesn't slow for I/O Ops
+CLKFASTb	.equ	7		;  bit 7
 NMIEN		.equ	10000000b	; Enable NMI: 0=Disabled 1=Enabled
+NMIENb		.equ	8		;  bit 8
 ; Board LEDs - At Reset the 3 RED LEDs are ON and the GREEN LED is off
 LEDR0		.equ	00000001b	; RED LED 0: 0=ON 1=OFF
+LEDR0b		.equ	1		;  bit 1
 LEDR1		.equ	00000010b	; RED LED 1: 0=ON 1=OFF
+LEDR1b		.equ	2		;  bit 2
 LEDR2		.equ	00000100b	; RED LED 2: 0=ON 1=OFF
+LEDR2b		.equ	3		;  bit 3
 LEDGRN		.equ	00001000b	; GREEN LED: 0=OFF 1=ON
+LEDGRNb		.equ	4		;  bit 4
 ;
 ; Core Board Functionality bits
 ;
 BF_DISPLAY	.equ	00000001b	; Display is functional
+BF_DISPLAYb	.equ	1		;  bit 1
 BF_COMA		.equ	00000010b	; COM-A (on SIO CHA) is functional
+BF_COMAb	.equ	2		;  bit 2
 BF_COMB		.equ	00000100b	; COM-B (on SIO CHB) is functional
+BF_COMBb	.equ	3		;  bit 3
 BF_CTCPI	.equ	00001000b	; CTC Periodic Interrupt is functional
+BF_CTCPIb	.equ	4		;  bit 4
 BF_RPM		.equ	00010000b	; RP2040 Module is available (other flags are used for functions)
+BF_RPMb		.equ	5		;  bit 5
 
 ;
 DispFont0_EN:	.macro

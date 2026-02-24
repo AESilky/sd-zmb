@@ -71,6 +71,7 @@ EMCFONT1:	.equ	1	; 6x8 Font
 ;;
 ;; @entry
 ;;	HL: Location of string to display.
+;;	B: String terminator (typically 0xFF or 0)
 ;; @used
 ;;	A, C, DE, HL
 ;; @return
@@ -93,4 +94,3 @@ EMCFONT1:	.equ	1	; 6x8 Font
 ;;**************
 		.global	disp_minit
 
-;

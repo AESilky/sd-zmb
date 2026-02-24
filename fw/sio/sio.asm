@@ -151,6 +151,32 @@ sio_minit:		; Initialize the SIO for basic operation. No interrupts to start.
 			;
 			ret
 
+sio_a_isr_esc:	; SIO CHA External Status Change
+			reti
+
+sio_a_isr_rxc:	; SIO CHA Receive Character
+			reti
+
+sio_a_isr_src:	; SIO CHA Special Receive Condition
+			reti
+
+sio_a_isr_txe:	; SIO CHA TX Buffer Empty
+			reti
+
+
+sio_b_isr_esc:	; SIO CHB External Status Change
+			reti
+
+sio_b_isr_rxc:	; SIO CHB Receive Character
+			reti
+
+sio_b_isr_src:	; SIO CHB Special Receive Condition
+			reti
+
+sio_b_isr_txe:	; SIO CHB TX Buffer Empty
+			reti
+
+
 sio_a_rts_clr:		; Clear CH-A RTS
 			ld	a,5
 			out	(SIOACTRL),a		; ZZZ - Disable Ints needed between 'outs'?

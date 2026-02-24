@@ -10,4 +10,3 @@
 	.global	bdctrl		; BRDCTRL backing
 	.global	bdfunc		; Board Functionality
 
-;

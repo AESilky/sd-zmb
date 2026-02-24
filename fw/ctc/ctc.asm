@@ -8,13 +8,11 @@
 ; ==============
 ;
 			.list	1
-			.input	"../cmn/stddef.inc"
+			.input	"cmn/stddef.inc"
+			.input	"cmn/board.inc"
 
 			.list	2
 			.input	"ctc.inc"
-
-			.list	1
-			.input	"../cmn/board.inc"
 
 			.eject
 TEXT			.sect	W
@@ -79,6 +77,13 @@ _minit1:	; Init the 4 channels
 		djnz	_minit1
 		;
 		ret
+
+
+; Do nothing ISR to put in IVT for CH0-2
+ctc_isr_nop:	reti
+
+; ISR for periodic interrupt (60Hz)
+ctc_isr_pi:	reti				; ZZZ - TODO
 
 
 		.byte	"!ctc!"

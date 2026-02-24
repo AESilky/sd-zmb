@@ -12,16 +12,15 @@ ALINK	:= ulink
 
 BASEPATH	:= ../
 CMNPATH		:= $(BASEPATH)cmn/
-DIAGPATH	:= $(BASEPATH)diag/
 
 CMNFILES	:= $(BASEPATH)version.inc $(CMNPATH)board.inc $(CMNPATH)stddef.inc
 
-OBJS		:= \
-	$(BASEPATH)ctc/ctc.obj \
-	$(BASEPATH)diag/diag.obj \
-	$(BASEPATH)disp/disp.obj \
-	$(BASEPATH)sio/sio.obj \
-	$(BASEPATH)util/util.obj
+INCS		:= \
+	$(BASEPATH)ctc/ctc.inc \
+	$(BASEPATH)diag/diag.inc \
+	$(BASEPATH)disp/disp.inc \
+	$(BASEPATH)sio/sio.inc \
+	$(BASEPATH)util/util.inc
 
 LOBJS	:= \
 	boot.obj \
@@ -30,7 +29,7 @@ LOBJS	:= \
 
 ROMIMG	:= rom.bin
 
-ASMOPTS	:= -li$(BASEPATH) -d _BLD_DT=$(BUILD_DT)
+ASMOPTS	:= -li$(BASEPATH) -i./ -d _BLD_DT=$(BUILD_DT)
 
 %.obj:	%.asm
 	$(ASM) $(ASMOPTS) $<
@@ -38,13 +37,17 @@ ASMOPTS	:= -li$(BASEPATH) -d _BLD_DT=$(BUILD_DT)
 .PHONY:	all
 all:	$(LOBJS)
 
-boot.obj:		makefile boot.asm boot.inc storage.inc $(CMNFILES) $(DIAGPATH)diag.inc
+boot.obj:		makefile boot.asm boot.inc storage.inc $(CMNFILES) $(INCS)
 
-intvec.obj:		makefile intvec.asm intvec.inc
+intvec.obj:		makefile intvec.asm intvec.inc $(CMNFILES)
 
 storage.obj:	makefile storage.asm storage.inc $(CMNFILES)
 
-rom.bin:	makefile $(LOBJS) $(OBJS) minimum.lnk
+.PHONY: LIBS
+LIBS:
+	cd $(BASEPATH);make
+
+rom.bin:	makefile $(LOBJS) LIBS minimum.lnk
 	ulink -f=minimum.lnk
 
 .PHONY: ROM

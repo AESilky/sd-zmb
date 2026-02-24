@@ -18,6 +18,7 @@
 BSS		.sect
 
 bdctrl:		.block	BYTE
-bdfunc:		.block	BYTE
+bdfunc:		.block	BYTE	; See BF_*** in board.inc for bit definitions
+
 
 
