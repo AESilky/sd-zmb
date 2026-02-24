@@ -4,5 +4,74 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+        "z80-macroasm.files.include": "**/*.{a80,asm,inc,s,z80,zed}",
+        "z80-macroasm.format.hexaNumberStyle": "intel",
+        "z80-macroasm.format.spaceAfterInstruction": false,
+        "z80-macroasm.format.splitInstructionsByColon": false,
+        "z80-macroasm.format.uppercaseKeywords": false,
+        "z80-macroasm.format.whitespaceAfterInstruction": "tab",
+        "z80-macroasm.suggestCommitWithCustomKeys": false,
+        "z80-macroasm.files.exclude": "",
+        "z80-macroasm.seekSymbolsThroughWorkspace": true,
+        // Global default settings (optional, but a good practice)
+		"editor.insertSpaces": true,
+		"editor.tabSize": 4,
+		"editor.indentSize": "tabSize",
+		"editor.detectIndentation": false,
+		// Language-specific overrides
+		"[z80-macroasm]": {
+			"editor.insertSpaces": false,
+			"editor.tabSize": 8,
+            "editor.indentSize": "tabSize",
+            "editor.detectIndentation": false,
+        },
+		"files.associations": {
+            "**/*.asm": "z80-macroasm",
+            "**/*.inc": "z80-macroasm",
+			"**/*.z80": "z80-macroasm",
+			"**/*.zed": "z80-macroasm"
+        },
+        "cSpell.words": [
+            "bdctrl",
+            "bdfunc",
+            "BRDCTRL",
+            "callind",
+            "callindx",
+            "callindy",
+            "CLKFAST",
+            "CTCBASE",
+            "CTCCH",
+            "DISPBASE",
+            "DISPBKLT",
+            "DISPCTRL",
+            "DISPDATA",
+            "intvec",
+            "LEDGRN",
+            "LEDR",
+            "MPAGEREG",
+            "MPAGINGEN",
+            "onnmi",
+            "onrst",
+            "RAMBASE",
+            "ramchk",
+            "ramerr",
+            "RAMPGS",
+            "RAMPGSTART",
+            "RLED",
+            "ROMBASE",
+            "ROMPGS",
+            "ROMPGSTART",
+            "RPMCTRL",
+            "RPMODBASE",
+            "RPMOP",
+            "SDLC",
+            "SIOACTRL",
+            "SIOADATA",
+            "SIOBASE",
+            "SIOBCTRL",
+            "SIOBDATA",
+            "stddef"
+        ]
+	}
 }

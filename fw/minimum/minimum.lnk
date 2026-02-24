@@ -1,0 +1,24 @@
+;
+; ulink control file for 'minimum' ROM
+;
+; Copyright 2026 AESilky
+;
+;-0d    ; Debugging output messages
+-v      ; Verbose progress
+-bFF    ; Binary image, fill with FF
+;-a -s  ; a.out format without symbols
+-o=rom.bin
+-m=minimum.map
+-lBOOT=0000
+-lINTVEC
+-lTEXT
+-lJMPTBL=8000
+-lBSS
+boot.obj
+../diag/diag.obj
+../disp/disp.obj
+../ctc/ctc.obj
+../sio/sio.obj
+../util/util.obj
+intvec.obj
+storage.obj
