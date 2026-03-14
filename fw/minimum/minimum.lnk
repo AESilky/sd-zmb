@@ -12,13 +12,14 @@
 -lBOOT=0000
 -lINTVEC
 -lTEXT
--lJMPTBL=8000
--lBSS
+-lJMPTBL=E000
+-lBSS=E100 ; Could immediately follow JMPTBL - just easier for debugging
 boot.obj
 ../diag/diag.obj
 ../disp/disp.obj
 ../ctc/ctc.obj
 ../sio/sio.obj
+../sio/sio_ops.obj
 ../util/util.obj
 intvec.obj
 storage.obj

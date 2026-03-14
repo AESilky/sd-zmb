@@ -16,17 +16,18 @@ TEXT		.sect	W
 ramchk_nsp:
 		ld	d,h 		; save the start page
 		ld	e,c 		; save the page count
+		xor	a		; start with 0
 		; fill all
 ramchk_0:	ld	b,0		; byte count (256)
 ramchk_1:	ld	(hl),a
-		inc	a
-		inc	(hl)
+		inc	a		; next value
+		inc	hl		; next location
 		djnz	ramchk_1	; continue writing this page
 		inc	a
 		dec	c		; next page
 		jr	nz,ramchk_0
 ramchk_2:	; all ram written, read it back
-		xor	a
+		xor	a		; back to 0
 		ld	l,a
 		ld	h,d 		; get the start page
 		ld	c,e 		; get the page count

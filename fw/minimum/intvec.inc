@@ -8,3 +8,6 @@
 ; ==============
 
 	.global	intvec
+	.global ivt_ctc
+	.global ivt_sio
+

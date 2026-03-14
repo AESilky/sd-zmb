@@ -16,7 +16,14 @@
 ; read the page registers. So, the memory is fixed as 32K ROM and 32K RAM.
 ;
 
+;	IDENTIFIERS DEFINED IN THIS MODULE
+;
+	.global	id	; ROM Identifier
+	.global	ver	; ROM Version
+
+
 ;	ROUTINES DEFINED IN THIS MODULE
+;
 
 ;;**************
 ;;
