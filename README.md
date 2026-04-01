@@ -1,4 +1,4 @@
-# Silky Design - Z80 Retro Motherboard
+# Silky Design & CMOS1 - Z80 Retro Motherboard
 
 This is a Z80-based 'retro-style' Single Board Computer (motherboard).
 
